@@ -1,6 +1,25 @@
 // VARIABLES
 // ==============================================================================
 
+
+
+// New Javascript/Jquery
+// ==============================================================================
+
+// Gets Link for Theme Song
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "./assets/sounds/hinchadariver.m4a");
+
+// Theme Button
+$(".theme-button").on("click", function() {
+  audioElement.play();
+});
+$(".pause-button").on("click", function() {
+  audioElement.pause();
+});
+
+// ==============================================================================
+
 // number of times user has guessed the word
 var wins = 0;
 
